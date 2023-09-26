@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITSAT Counselling</title>
+</head>
+<style>
+    .navbar{
+       width: 100vw;
+       height: 5vh;
+       font-size: x-large;
+       text-align : center;
+       transform: translateY(-15px);
+       display: flex;
+       flex-direction: center;
+       justify-content:space-evenly;
+       background-color: rgb(192, 192, 192);
+       place-items: center;
+       background-attachment: fixed;
+
+    }
+    .ap{
+        width: 100vw;
+       height: 5vh;
+       font-size: x-large;
+       text-align : left;
+       background-color:navy;
+       place-items: center;
+       background-attachment: fixed;
+    }
+    a:link {
+    color: red;
+    text-decoration: none;
+    }
+    a:visited {
+    color: green;
+    text-decoration: none;
+    }
+    a:active {
+    color: blue;
+    text-decoration: none;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .img1:hover{
+        box-shadow: 2px 10px 10px rgb(111, 111, 111);
+        transform: translateY(-15px);
+        border-width: 8px ;
+    }
+    .main1{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: center;
+    }
+    .ds{
+        float: right;
+        height:15%;
+        width:25%;
+        padding-left: 3%;
+    }
+    .ca{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7rem;
+
+    }
+    .ap1{
+        padding-left: 50px;
+        display: flex;
+       flex-direction: column;
+       justify-content:space-evenly;
+    }
+    .ap0{
+        padding-left: 50px;
+        display: flex;
+       flex-direction: row;
+       justify-content:space-evenly;
+    }
+    .bn{
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        align-self: right;
+        justify-content: right;
+    }
+    .bn1{
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        align-self: right;
+        justify-content: right;
+    }
+    .img_new{
+        padding-left: 100px;
+    }
+</style>
+<body>
+    
+  
+   
+
+    <div class="logo"><a href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZEAAABoCAMAAAAHFT0AAAABRFBMVEX///8hHXDqmDDtHCT6yixZVpR1w+jHxtuQjrfx8fbj4+0vK3k9OYJ0cqaCgK+rqslLR4vV1eRmZJ3vpDm6uNKenMCGW1DdkDRTPGC4eUAuJWxsS1ifakjRiTg6LGhHNGTEgTzrnj3vsmTL6fb++fKrckSPzuz76M2SYkz88uXd8PlgQ1z7xsjyv372jpLvOD95U1S64fTwqkXyVVv1f4Sg1u/U7PjVk0DzxYv77Nj32LHuq1f20qTuKjLwR030cXb3nJ/94+T83nv71FTzY2jz0dXwqy/96KPsvzDztC5yXlf+9df84Yj95Za2lEH70Ub5uLv4qq2piUZlU1tXSF/Enz3Rqjn96uSbfkrftDWOdE5bj8Nrrtn83aL6vKFGZqWAaVJuqNNQerSluNawzOWPpsv4o5M7UZb97r1gmsr7y67k47nfUSUpAAAZWElEQVR4nO2d+X/bNpbAAcY0AN6kSFmXD8nyXTe2Ex+xnaRpUjdO76adtE1nptPZbrq7///v+x4OkpLoWG4sO+3offqpFYqX8CXehQeQkCvJxlouVztwKtcuD46Peie1Aeltn671b/u+/jNl43R7r1Y7bNbrjUZjkYLA33a90wQsJ0fT3nLDsnF6Uuuu1Bu0ShbbncPa3vYUys3J2nbtcL2gEURZ4nMv4YEb5VTqS7W9o43bvtP/DDk+6XYUjoSHtiAB4YQ7zCaMcEZpGCYaynq3Nu0ok5fjk8OdFrS3l8Whw5KAhTwGIkTYxCcZp4lgLCEikFDah7XelMlEZe3ksI04XGoz4oUhjQiljEM/ITaxGeOUszRLs5BlzI4Uk+2p7pqYbPS6yIMygopJJL5DKfFo5gAO+I8z5tOUO4mIbNvxRaL7yd7pbd/4X1VO99ZBX3k8cjg2dRh6JLSZzzlzuCAJ4SmxaRwQX1DoOwHgioVPaateO3lw2/f+V5R+b0nac+E42DfArgvqsChLiR8yzkRAwJ5EFIx8xgTPUsentpMyaeOXpt3k+mVNdhAkEgjf8dFGCDtMA5+IKOO273sBjwiJiBMyXwQhES6NCdF+V722PQ3kr1eOu1ugimJQQtzhDvQHVFuZ76TuUHhoczcVxA3jhPok9mS8Ao7XYnequa5VtpcWKfVFCO3vOhl0E3z2o6QyZAd95rsCWDDm4B6hcIBfa2lviuT6ZHupRd2AE/nI+yKLOTOtv7BVX2nOW1KazfUdFTu6tjTuBPoUJRmaeko7e8e3/Tv+KtLvdVo0cgRlMUUmLBYuNjVttTtz1ogs1WXekXqCSBLAxY5JBkhqUyTXI70ONG+YksgVDLwp6C2yr7RXRmlomV9fkB0FwkcbyARhnCGc9hTJtcg2AgH9Ewpo4pQq49Gql3pHpyGlPl+C0kT15YF19+KUCy+zQ45IpjmVdxe0IXbiAxJQWlzE8TAPaH1tU7TWGmAiROxjxwpjm0V0fWre31lOAUgEPHwRuXFI4wzcrR3FY35nYamCCJgXrc+aCzLEF5kNQBLhgAPW2ZvGJe8ma91FGonAF4jEE7aMwIsu0IYPc826JtJBp0viWVhX0PAbm4gkjAMS0sB2afPktn/Sn1v6e1uYN4ndCJF4HnSQesED1NdKe2EwFlEDvPiNUmHwzyhCICmwEQFtHW5P+J4dxlFCNuHr3I701ilNfTdGJNzx84a2hjhUiDbzc23QXGlAnBTcYCfx6eJF1t0eFp+n+Zex2hSGI3vlIvdzlB+oI9W06johH5SsQIf/dPTfK7eVOXiicroE4QQXgRuKKGJZrrEsayX/2VGQMX0jjPHEZFXaud1HzeUwl4bQrgQcrp0LTEkVVjcQ+tTq35xf/AjIVhnaFsWj17FHD/Wd4haY/nvlxjIHT1I2aosY30VOikjggouFi6U6SRKKV19/+Ozewzsgj+49/ugDEnP5lG4VrjB4zxFzsW3QoHi0Wa23qtvZVW06FhERjW4NR65TQcTs9t4T6cHjnYUkc1kc+YEGMmfMA3W58+SjR3eG5Nk3r5iM6NHgtNsaCWWhQ1jiOIzRhW6l3rqgoRWSsYhUtvVII1XupZC870SOD1uUh67txB7HzKEE0qEdy1qXPMQ39woQpY8PHz+RKcbFebAhjTndSzgJMpJFAix8/aRKb13U0hF+OQ6RsHKzK4aug0S8wowYwxOT955I/6QNnmsa+G4qEtujC7ptW03wv6gvvr5b6hl3X5WQ3Lnz+AmDHyoHVDRH6tuxSKhrR2lED6sGsC5sarTP4xAxNj3JGGNZnpgettFIxC5vYNL24SY4jgnyB4mYgycnp028zVQQ5oHjS1tLWv/IBy99UiIAaD44/mRQeW2QQO8rkbTxXEFA3ZDEDm1UGXe1d95WTurrE/ikIOIwI9pmZPmGWN+aeU4dvYc7dJ0RIiSWSEp+0h8iMnHp7zVAZyVphl0E7nClFJxHYrkM4MndZ2vW8f07z0pK7OOnn5nRrC20JWB4UicJRGy7cVRp3IeIgGTFJkOk+FKbg5LrOrxBuMNb8gMHiaiHp+QDvJ9EsItEDMw69WO44x205y3z0O7PLhc661H/6ycn1t6re6RA8tHMzMynagiRLsqUCxwbwWOoNjVqo51klEhp0/hESofzSrVVQYQN7TZwnjhFc5OOhhoird4+KYFoPSCxIAKuSpUR0UR8sjo7u38/b/1vtjdO4dtTcvxNvu14BpFId7StXGbwBjLhpVrZN0ctSQUR992IjB5kDryACAaaxsKrbwTPI04v01YikHsJo1RtfQvm4EnJ8SGEZ4G8GLZrM8+JKCCzs4XaetXtrSGRU+tVblk+RyIzH6OL1tFhSYN6RKt2j7b3Rq44SkSoTQm5CpHssl/2FiLmhDmReKCMwIvzE7DyN4PBzKTkZIfajgh95qSBm0fgbWwfCaRQW8+OLWutd3y00bWOH+tt959KIqC44MZ1nD8P/oD86TbWdR2ODF6NEkmKNh6fCOWXODwVRDJ9mWEizlBdh/Kk8QTZwDepuf8JEnlQa6kOGfI0o635PHcSCQWkUFvfbFtWr79GevDna73tHzNaPmVFpF+niU9dHyJFltJ6b/iS6sdFue+UeaVmGINIPvRPoyB9C5UKIvJc8SgRuV1mx2J1N37pytQPGQskGc/c/wSJHOnElRfiL63rrCFQindntXySKy3LOj62jlBzbTxUMeKnhsjMZxwPn8PsPB4egmHyQxHShdpwOTC9QKROGIMI8cpHeX54gc0dJZKZVh0i4uiuI0XaRK+4slZhKnNTDi8nJBAderbk79q0hc05J3VWtgksVldLagscX6sHGstag75yqtTW46c5kad9uOX1BQm1jolkm4gwCRK6NGzbq3m4Kn87DpF0+FjPr0r+DhOJk/zUQ0RCw6A4fX5l1/BmwwdPRlBpOWBGdDE1tmarjjoLjcgyAe83V1uPPjntWht7Vheo9F4pIv89U8gXKnJDqvPykw3+gpPQneGhq2oi9mCmsdh9lAjxRw/3qjONbpHE1ztG5hZKRDit9InlIcV5sZMEZNJEUGmRJArhefbkUMeccnwZ6iz4frOktu6RjZPtNXC19taIDuT/bnA8/3ZmZkM11LpyDOCxdTI/YN6I2qomcgWtBQ/1cIUlNnVVXmtEVD5ziAgbGPFwBogUZ8Wn1iaTJgKeFuWOiEmS+TLCW1cPrEASm5qIVFsPP3pw0ts43djun24cbb96pgJ2Q+TLl6C35E+hC8ozSDMeog/n0qUhb+siIhLJeESIyEYT8sNIqojYTn4LF2Ya/TKRktrjN0GkX5NjsxHoF6aebjVWy1Bbze5uLksPGNWW1FlW97iPtdqWdfLgm4cqYFfyy7do3FUnWZKjKgl0EdUm60OZFNU23khSVjpbYxIBcbJkwMRrB2nkwELcfKzxAiIMOoutTmpOULqRGyGy1oWWkT/MC6TSWlJPG5FOFuBY1mrrHvq8IHsb/bWu/HT8yUMVsEtZfI5xorIkO1JtJSrsi1y6NWRI9NNa2qLzWthJxieC4oRBua8MOl14YOFjD+RrR4nEwSBAc4KbJnLaxHmGBILDlEulpapNwmXVRVBzLSu1db+PSHr9ByfwH3w6enXPBOwg334n/6C7RbdWlNoKqM0hXIhpayi3NUrEBH3JVYmgGLeEDo8jVsQj5VsoExEj/cmc4KaJ9CCY40Hicwb3hM92ZwstuwoOpcZa5W9eK7X15Mg6Jf09q0f62921r0Fp3f8q7yI/qDAxM2kYS/n3QYTzFw8HhxIriMT5tqsTIWbgYzixNT6RUsgeJVl4m0T2tqgTMyE4jhDp6pOWtuuyi8z+DOpXeVsPP+h/TWT3ePLJq/sDAfsP9HsVkzh5kLkIQQInECaGI9nGCiKObo7xsihSBiKQ8N2IqEskurKD3SaRWoMKwVISZ2BGVA4ELAkHTbW6q9NaLvVMkPjoLobtVu/JnbsDAfvfWvS5+gThdEMR2aE2CwMfup9P64OmvYIIuwqRi4n+QSLymlFuhG6XCPgfgc9TBk9ZKy8oQU+LqOhwdlX8e7fIbX14DHus6TSjCdgBCP1Rffzdl86v8qKZKmWI6M5gaquiRf2raC2tX8q+bmU6fmwiOI5VGqW/ZSLgjEivzzYPd12akVX4chM7yfLyKinltp70rJ75bAL27+AOv9dxOzdFwThSnDE52EMbg87WKBFTysDHIqI3JGRkn8FcythEcMeS5zyQRblpIkuYZvBsziHg0on4LeoigmUilsny6irors39IiV/b81aMwPvfx8l8jE06M5WY0kmUlIsBGWgDxu1keYo+6U8d3TisYgYX9k2esYxztZgiPhHidi3SaRJuQDDDq56JE1ys9lc1IYdNRZgOQATf1BKyReVD3nA/t1CZ0HbkafKaapLZ8uXRbmMua0qIhUy5oiVyD2jKMAAM49IKiLEsYkUiUalQc0JboEIYY5gHK6umhGvumny8LP7qLsG1NaH5AP9CQP2c0xpLcKRJgFMykQyFZJTOhiQXAREZlnH8X6ztxxPBg8ci4haR0F9Y/qbOcHNE/FkXjThXkEkKYhs7s7u4tTo17na+vDUEDmdmTmzzs5q1txKx9J9ZKZMpJDBmuyLgAzUNBa7j5f7pcNW5ApElKfmp4yF+ZkDFt4SkUI6phm5IfKauv+CP79R+qbwtnqayF1QWufW8+fPXzYaP5wbJAWR8iJp4xDxrpCNHynEpqXyrYEDx4tHgoEzheqK9vtDJDBE/knpr/j3jfs6V1s5EQzYz89mzs7X5y34o5EURJaazU5dylbjciKRSYCMGbOz4bSHPzq8e4UsSqnTeUy7frdDpHtYLIVpjdgR5kX/ladTtNrKiWDAfnZ+bs132s0zVGDng0S2T0+3e1JOaoNE+LCw0u9z9KZii54GMjx0W04N2lnVcDsW9wTVv9sU+OTTUdKo/GTISqFAnqCUKgv1+SZaHYQLxZopnL1hIpvLEJaA57sv/716f4DIwy+g/a3n57UXO/QX6CSgweB/TwWlW40GdrebmKyrSlGvp7RNTL6c96qCRBqNxoLKxf/8L5n1RSQHu6UCCEMEA/bz2szZWd2aO3tuQQ95XqvNPGV5jdB0+vQ7y1EesxM06vQ37f++Dst1W4YIBuxnZzPW95363Nn5c+wg4At/kZqY3ZouSPfOcpSXajmrs79qoz6Ln17PFmrLEPm79LTOai/QapxDb1Hp+DyLYt32z/kLyLFlcr8hqKk3iS7Y+mfO5pMSEQjY0XBYZy1Km6C8zhWRz/L02HTu9LvLhmXGmvwDadeFGkkMNBCltjQRDNgt7Bvr9RUgU1O+71dEjemiq3XbP+evIF2TavTQtO8ezG5uoh3JA/jVjwoipwgA1FbNajbBqussysdgRraUZZ+uDngNomobcJHGeF/XPYRvgtWcyOyTnMhdlWU8r23VG19CoCgNuxweoao8yJoui3INgoZkSU6W9jECQaf3DaX/UxBZfmSI3NdprKU6XTizamc1rbRkVhanWo3OUchF5AGhwyoCrfjtQQF7S7TslEKTmEMcN/mFACYrG2qUHXNEWPqwL9CsuwUQqbYUkf9VQH5pzHWsM5NlnPk0zNMxbzEjLC+R4lVJDvvtGYq3zVLjec5DmBGTC2L2P4ucyPFxmVYCo/6zC27vbwclIqi2JJGHqizoe1BQSy9mcumr4jMcr3/Limc3QATr2O2QYcrQv3j3P4Gg2lJF1NhJfsW8/AHZ1/HhwapUW5KIHmF/QVudne9yIF+oLnKJ0roJItwMd2RqfsGfVvpd6WrJTrI5+/Mbj63uCgFqfXN5E76WauvD4w/ysiCp4fI+8pWe14EFW0dvucoAEWNKYjABIkuSTCgioW/LmXhgGkQA3NLATqRVwAU6cTd5EE9snZOE/bljiAg37xoRbnIyOFuozuZw22dwKdsP0aTF+pOxadIUOXje98MEbauSBbpAXWdf5Rp3sVJofxdbQKqtex8+NiPsf5MAvjREfocns9NZWLgshTJAJNWD4y4N1YTfKAIieu6vj7vg5CYzrTFEIvIzDm/pQRLfzLZxE00kLepNsaH15O5IwBFqgR3uKhvDaOTlX9nqlriZnjI6/eEWRNr2xkJTLjmA2kqoShTMOJJl7W3dufNMKa2f6OILSg2Qz2NX1qnOXxYeMlwgWIoPV5FLDUEjuNA5vJBxOfYQyY/4Ff7b5xnO94l9XEMA25OlEY1w5C8TjtRLuKABwxkMiggvjZoTnJLlOwKwZHg22BHXBM1wSReHUX2gXSbiwhXgRkZW9bgV2dZNumMmWZF9Mx1RZoBlkKhL4p9/++KHn+jLfIQ9ytO+b88yFtMI5fIQst7Bp36sHmyOa92o1sig2ZVFSCQ2gZ1Ltbrj0jQ0kwWZxsoKImX75Cg+2NbclLvg7h48GOoTXrogEqv9o4mvDzSWbOi4fQ7CEqay8ULlgPUoCQaJd450F3k588MLrbS+6vtqtsPlGRRoBj3ryYNWiKXaggbWTQLNDo+vclrhKy7nRMkYBetVcZtUSAmu0yErJVzZsHL/qJKIkBYitiURW50X/2+XDwwLItD3/PcChhKdAMY1BtxYIomwyrQYSQS19UgG7M9b9KfvaUt3kc9Ae+gco9V9+5qZQ76WB49pCo8l1xjg0bV1PQa+g0Y1VJiYWR36YHzima9GEaFhFYEkJxKVL+gEaqIlN9coEVEH2rgyTq61/IuHJW9B+nu6WdtUI4G725WKCwvppNq6r13fxR8Xjaf1mXR8dZLxkpTWEJEM1BZ2CkPELojYdqwaKsAJhX4miUT6UFyggoIDFhUNa3ytsKilC8CdAxyRzRNJRO5wCRGS+sh/uNjotmRNteqOcmgAyes3vx6Qg31VSCfVlgzYvwQv6yVtyXrfpxu6TFSWRY7MXx+SISKgJOT7MjLdOi4SyesN5C5CT20u9ZGEZpGqdrBxeWKzUR3nFI6SR7NAFVnzSiKKb5R3Rt+cAsz9+xLvH+lhK4mEydrfWQxLdvfJrlRbMmD/W4u+/IHSb2XGt2+qa9Cydy8bPByOEG2aYMNoy46eWKBaB1/VxHV1dn6gKgNBhvkntOyp+qhJ2maNQTDljuZrVxKR13SkwbL1KXRn5QOFxbcqJ1ppSclUhTwY9gP46gDV1uOvJJDGt63WTzKblU9QkgujXLpi/DCRkKouYOOzjHNzmCOLfcBL9fNulKr5uYLIwiwngs24MjruBN9xvdEQAUXlZo6cwI5mAcINLFUMqohE8kAfgxA51xu1IU6th42XLrxyUyIj9xyJ7Wxq91fP3H3yDwnkux9/lBnGjzcwAMPovSWBvC1aVzJMBOcrovrRS8LgM6+VYB642bjmjYzmGFUm3pUvcXBdDAsp1ytp5n2kWHgmUPO34KAEX2IzQiQPHnUQiu6anV/9fZEHOZL2Ii7TSJaV6hIC+8vypzNfLr7UtfBPf5d1su25tlq6bpyhQydfYpdxqe4TnfNwfNtLWIj5C5bYro0r0ahdBLc9cH5S23Z4yBIvkqvEhnZk+06c2KnaAd+yZS4isODeU14sHGAnTPg21zuoG4ALgWVP4UC5si1879mp3CO05eWurUHfXQySLWXhvVBadpOSLxbe+HwD12qmrXVcf3lcIKPi3VosxmhFqvO9FIVkBdPqTbm8bOCQZZ0EnlVEnn7+O0nlKESjWPD3DwHJBnMeNyl/HiIaSR6ZULUIAdk82N3d/b8vvvj9M3APfa2r3w0IJq4q1xi/CfkTESFyzrqSYuV4iLOU+HZpXZJ8mfLLjXqFZNABr/vmx5b4orrg91H6Pd3OHXqR6OU1dclcd/qipEnLqU461mXLt+c79YaZE9JqbNVX5iSr/C0+06rSyUtvXjc2vqVdLT+gXwmjJlrPUbqo3wG3sjj/h3TWVK4ip3MLLZNfny+9iqdQVCvaqM83cK3faTH8hKXfxVhkwSwZq2R9gIjmoZyxnUuS8FN5V+npGXELA+/aG5GVLWPom5clfafyTnKs1z5D2ap6YyjK0o52jb0EF2ic1vpOUPpdMBmJk8+YXNxZGeoqzfW2cX9dVb+xNS32naBsy8XootThpViw0VCTb+vtRumFY14m4lhW1KxXvgBmKtcha0pnZWGQElzizbvwBS1JSpjwIpnCbi1NXeAJSX9vHUdGuJM6hOFywHxgDr5ZO9dNQkEcj4aOELLmZ3FuGrhPRo7wJSK+IJnjkox4Hnz0fLPKJ3zjU9cOspiI0PcJtxkJPDXOsz51gSciGyqZlWFlrROyIIiEje8oMRPIcckFwsKQUDcIiUOC2KMB1iPWrd6UyETkQQ/fXUx5Rh0ufAJKCcsPKZbmhHYYJqii/DAmEXMId82yGo35abZxcnLc7bSo53hpIGjgZuBKBQ6+MQz+mcVcoE4TPA5IAp1HVS43mtbRtINMUPpHh/UFab3hf7GPy5HFDLpLTImIoVckwiEkjYVPPU/x2J5mfycs/aNuR6ffZY1fxBhljksFxzV8qZ9EdqzdrvaUx81I//hkfr1IpvgBdWO1PHHZF97qzO1N9dWNyYOjvfn1rVbe/G5ShkEX2itz3e1pHv5m5cFpz5pfqTcWB1jQxla9OWedHE1x3Io8OD3qdeW6ckow69jbntK4dvl/ZGIW2ZyeX4MAAAAASUVORK5CYII="></a>
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <div class="right nav">
+            <div clas="bn">
+                <a href="https://www.bitsadmission.com/"><font color="darkgray" size="2">Bitsat</font></a>
+                <font color="darkgray" size="2">|</font>
+                <a href="https://www.bits-pilani.ac.in/university/ipcd/home"><font color="darkgray" size="2">International Relations</font></a>
+                <font color="darkgray" size="2">|</font>
+                <a href="https://bits-pilani-wilp.ac.in/"><font color="darkgray" size="2">WILP</font></a>
+                <font color="darkgray" size="2">|</font>
+                <a href="https://www.bits-pilani.ac.in/university/practiceschool/Overview"><font color="darkgray" size="2">PS</font></a>
+                <font color="darkgray" size="2">|</font>
+                <a href="https://www.bits-pilani.ac.in/library"><font color="darkgray" size="2">Bits Library</font></a>
+                <font color="darkgray" size="2">|</font>
+                <a href="https://www.bits-pilani.ac.in/placements"><font color="darkgray" size="2">Placements</font></a>
+            </div>
+            <br>
+            <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="12">
+            <input type="text" name="search" id="search" width="600px" height="100px">
+            <button><img src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-16.png" height="10px" width="30px"></button>
+            <br><br>
+            <div class="bn1">
+                <font color="#OD3AA9" size="3"> Last Updated on <b>Sunday, July 2, 2023 &nbsp;</b></font><br>
+                <a href="https://www.facebook.com/universitybitspilani/"><button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-FMumLw9D4xNbu3MpTsbzK6XpodHORIqzQ&usqp=CAU" hieght="15" width="10"></button></a><br><br>
+                <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="10">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FBITSPilaniIndia"><button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBfcoelH9SgJgiU46MHCGhIc5t5n3wViInHywbXfYf2ro_nCFryFxneOMCkVcgC1TL-LA&usqp=CAU" height="20" width="20"></button></a><br><br>
+                <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="10">
+                <a href="https://www.youtube.com/user/BITSpilaniTechMedia/videos"><button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7PtTSwTMxBapUXfaKxb_KXHEL364lTugEmQ&usqp=CAU" height="20" width="20"></button></a>
+                <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="10">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <nav class="navbar">
+        <a href="index.html"><font color="navy"><u>Home</font></u></a>
+        <a href="https://www.bits-pilani.ac.in/bitsFactsHistory"> <font color="navy"><u>About BITS Pilani</u></font></a>
+        <a href="https://www.bits-pilani.ac.in/integratedFirstDegreeOverview"><font color="navy"><u>Academics</u></font></a>
+        <a href="https://www.bits-pilani.ac.in/ConductRules"><font color="navy"><u>Policies & Procedure</u></font></a>
+        <a href="https://www.bitsadmission.com/"><font color="navy"><u>BITSAT</u></font></a>
+    </nav>
+    <hr hieght="15px" color="#OD3AA9"> 
+    <br><br>
+    <div class="main1" >
+       <div class="img_new"> <img class="img1" src="https://www.hindustantimes.com/ht-img/img/2023/04/09/1600x900/bitsat-2023_1681028629798_1681028630138_1681028630138.jpg" hieght="500" width="750"></div><br>
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="200" width="200">
+        <div class="main1_in">
+            <a href="https://www.bits-pilani.ac.in/DuplicateTranscripts"><p><font color="navy" size="5">Learn more about BITS Policies</font></a><br><font color="black" size="2">BITS Pilani</font></p>
+            <a href="https://www.bitsadmission.com/"><p><font color="navy" size="5">BITSAT-2023<br></font></a><font color="black" size="2">01 Jun 2023 | Pilani<br>BITSAT-2023(Session-2) last date to apply till 12 Jun 2023, 5p.m. IST</font></p>
+            <a href="https://www.bitsadmission.com/phdmain.aspx"><p><font color="navy" size="5">BITS Pilani invites to register for PhD students</font></a><font color="black" size="2"><br>11 May 2023 | BITS Pilani<br> Admission Open Ph.D. Programmes</font></p>
+            <a href="https://bits-pilani-wilp.ac.in/hcl/programmes/b-sc-in-design-and-computing.php"><p><font color="navy" size="5">Bachelor of Science in Computer Science</font></a><font color="black" size="2"><br>20 Apr 2023 | BITS Pilani</font></p> 
+        </div>
+    </div>
+    <br><br>
+    <div class="ap">
+        <font color="white"> &ensp; &ensp; &ensp; LATEST  news</b></font>
+    </div><br>
+    <div class="ap0">
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <div class="ap1">
+            <a href="https://www.bits-pilani.ac.in/university/research/home"><font color="navy" size="5"><b>Research</b> & consultancy &nbsp;<img class="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpijOGSZVkYj71VSaPUQd9kpQ2kl8IZovsw&usqp=CAU" height="13" width="15"></a></font><br>
+            <img class="img4" src="data:image/jpeg;base64,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" hieght="300" width="250">
+            <br>BITS Pilani works with and provides consultancy to the government as well as industry through its many R&D centres.
+        </div>
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <div class="ap2">
+            <a href="https://www.bits-pilani.ac.in/careers"><font color="navy" size="5"><b>Career</b> with us &nbsp;<img class="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpijOGSZVkYj71VSaPUQd9kpQ2kl8IZovsw&usqp=CAU" height="13" width="15"></font><br></a>
+            <br><img class="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGq5YztdnJ7VCmwZGxOQWFkPhjiRGVOPoulg&usqp=CAU" hieght="300" width="250">
+            <br><br>BITS Pilani invites motivated and research-focused faculty with an outstanding academic background, and potential to excel in research.
+        </div> <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        
+        <div class="ap3">
+            <a href="https://www.bits-pilani.ac.in/placements"><font color="navy" size="5"><b>Campus</b> placements &nbsp;<img class="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpijOGSZVkYj71VSaPUQd9kpQ2kl8IZovsw&usqp=CAU" height="13" width="15"></font><br></a>
+            <br><img class="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaj6vp6KyndBaUyPkLAsbAZFu287r4qvrQA&usqp=CAU" hieght="300" width="250">
+            <br><br>BITS has a remarkable placement record and most students have their careers charted out well before they complete graduation.
+        </div>
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+        <img class="img2" src="https://e1.pxfuel.com/desktop-wallpaper/930/349/desktop-wallpaper-plain-white-resolution-is-cool-white-background-thumbnail.jpg" hieght="190" width="70">
+    </div>
+    <br><br><br>
+    <hr>
+    <div class="ca">
+        <div class="bs">
+            <img  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSV7TSg2Ya5Q18cWEznQZCILSShEDw-HzaN0u6IlM7lVfojnVof">
+        </div>
+        <div class="ds">
+            An Institution Deemed to be University estd. vide Sec.3 of the UGC Act,1956 under notification # F.12-23/63.U-2 of Jun 18,1964 © 2023 BITS Pilani | Contact us : webmaster@hyderabad.bits-pilani.ac.in Designed and developed by fractal | ink design studios
+        </div>
+        
+    </div>
+</body>
+</html>
